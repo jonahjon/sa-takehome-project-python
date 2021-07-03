@@ -1,0 +1,229 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f6fa;
+}
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+.box-shadow {
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow:    0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow:         0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.border-placeholder {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #ccc;
+  padding: 5px;
+}
+
+.example.card {
+  background-color: #fff;
+}
+
+.example.card * {
+  font-family: Source Code Pro, Consolas, Menlo, monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.example.card .row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px 10px;
+}
+
+.example.card .field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.example.card .field.half-width {
+  width: 50%;
+}
+
+.example.card .field.quarter-width {
+  width: calc(25% - 10px);
+}
+
+.example.card .baseline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #cfd7df;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.example.card label {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 8px;
+  color: #cfd7df;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: 0 50%;
+  cursor: text;
+  pointer-events: none;
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.example.card .input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 7px;
+  color: #32325d;
+  background-color: transparent;
+}
+
+.example.card .input::-webkit-input-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.example.card .input::-moz-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.example.card .input:-ms-input-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.example.card .input.StripeElement {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity;
+}
+
+.example.card .input.focused,
+.example.card .input:not(.empty) {
+  opacity: 1;
+}
+
+.example.card .input.focused::-webkit-input-placeholder,
+.example.card .input:not(.empty)::-webkit-input-placeholder {
+  color: #cfd7df;
+}
+
+.example.card .input.focused::-moz-placeholder,
+.example.card .input:not(.empty)::-moz-placeholder {
+  color: #cfd7df;
+}
+
+.example.card .input.focused:-ms-input-placeholder,
+.example.card .input:not(.empty):-ms-input-placeholder {
+  color: #cfd7df;
+}
+
+.example.card .input.focused + label,
+.example.card .input:not(.empty) + label {
+  color: #aab7c4;
+  transform: scale(0.85) translateY(-25px);
+  cursor: default;
+}
+
+.example.card .input.focused + label {
+  color: #24b47e;
+}
+
+.example.card .input.invalid + label {
+  color: #ffa27b;
+}
+
+.example.card .input.focused + label + .baseline {
+  background-color: #24b47e;
+}
+
+.example.card .input.focused.invalid + label + .baseline {
+  background-color: #e25950;
+}
+
+.example.card input, .example.card button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+}
+
+.example.card input:-webkit-autofill {
+  -webkit-text-fill-color: #e39f48;
+  transition: background-color 100000000s;
+  -webkit-animation: 1ms void-animation-out;
+}
+
+.example.card .StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.example.card input, .example.card button {
+  -webkit-animation: 1ms void-animation-out;
+}
+
+.example.card button {
+  display: block;
+  width: calc(100% - 30px);
+  height: 40px;
+  margin: 40px 15px 0;
+  background-color: #24b47e;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.example.card .error svg {
+  margin-top: 0 !important;
+}
+
+.example.card .error svg .base {
+  fill: #e25950;
+}
+
+.example.card .error svg .glyph {
+  fill: #fff;
+}
+
+.example.card .error .message {
+  color: #e25950;
+}
+
+.example.card .success .icon .border {
+  stroke: #abe9d2;
+}
+
+.example.card .success .icon .checkmark {
+  stroke: #24b47e;
+}
+
+.example.card .success .title {
+  color: #32325d;
+  font-size: 16px !important;
+}
+
+.example.card .success .message {
+  color: #8898aa;
+  font-size: 13px !important;
+}
+
+.example.card .success .reset path {
+  fill: #24b47e;
+}

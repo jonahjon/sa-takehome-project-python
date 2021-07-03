@@ -1,0 +1,17 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<main>
+  <div class="mt-40 text-center text-success">
+    <h1>
+      <i class="far fa-check-circle"></i> 
+      Success!
+    </h1>
+  </div>
+  <div class="mt-40 text-center d-flex justify-content-center p-4">
+    <div class="alert alert-success mt-5 w-100" role="alert">
+      Payment of {{amount}} {{currency}} for <span class="font-weight-bold">"{{description}}"</span> ({{chargeId}})  was successfully processed. <a target="_blank" href="{{receipt_url}}" class="alert-link">View Receipt</a>
+    </div>
+  </div>
+</main>
+{% endblock %}

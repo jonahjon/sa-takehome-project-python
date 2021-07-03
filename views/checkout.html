@@ -1,0 +1,50 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class="row justify-content-md-center">
+  <div class="col-6">
+    <div class="text-center mt-40">
+      <h1>
+        Checkout — Stripe Press
+      </h1>
+      <h5 class="text-secondary">
+        {{ title }}
+      </h5>
+      <hr class="mt-40">
+      <div class="mt-20 text-info">
+        Total due: $<span class="amount" data-amount="{{ amount }}"></span>
+      </div>
+    </div>
+    <div class="card box-shadow mt-40">
+      <div class="card-body">
+        <form action="/charge" method="post" name="payment-form" id="payment-form">
+          <div id="card-errors" class="d-none alert alert-danger my-2" role="alert"></div>
+          <div>
+            <label for="email">Email address</label>
+            <input required type="email" class="form-control" id="email" name="email" placeholder="you@email.com">
+          </div>
+          <div id="#card"></div>
+          <div class="mt-20 text-center text-secondary border-placeholder">
+            <div id="card"></div>
+          </div>
+          <div class="row" data-locale-reversible>
+            <div class="field half-width">
+              <input id="card-city" data-tid="elements_examples.form.city_placeholder" class="input empty" type="text" placeholder="San Francisco" required="" autocomplete="address-level2">
+              <label for="card-city" data-tid="elements_examples.form.city_label">City</label>
+              <div class="baseline"></div>
+            </div>
+          <div class="mt-20">
+            <button type="submit" class="btn btn-lg btn-block btn-primary" id="pay-button">Pay $<span class="amount" data-amount="{{amount}}"></span></button>
+          </div>
+          <div id="spinner" class="w-100 d-none align-items-center flex-column my-2 p-2">
+            <div class="spinner-border"  role="status">
+              <span class="sr-only"></span>
+            </div>
+            <div class="my-1 text-muted">Making Payment...</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

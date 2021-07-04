@@ -10,8 +10,14 @@
   </div>
   <div class="mt-40 text-center d-flex justify-content-center p-4">
     <div class="alert alert-success mt-5 w-100" role="alert">
-      Payment of {{amount}} {{currency}} for <span class="font-weight-bold">"{{description}}"</span> ({{chargeId}})  was successfully processed. <a target="_blank" href="{{receipt_url}}" class="alert-link">View Receipt</a>
+      Payment of <span class="font-weight-bold">{{amount}} </span>{{currency}} was charged to {{name}} for <span class="font-weight-bold">"{{description}}"</span>          chargeId of <span class="font-weight-bold">{{chargeId}} </span>was successfully processed.
     </div>
+  </div>
+  <div class="mt-40 text-center d-flex justify-content-center p-4">
+    <div>
+      Receipt emailed to {{email}} <a target="_blank" href="{{receipt_url}}" class="alert-link">View Receipt</a>
+    </div>
+  </div>
   </div>
 </main>
 {% endblock %}

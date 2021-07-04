@@ -7,8 +7,9 @@ pip-log.txt
 pip-delete-this-directory.txt
 instance/
 .webassets-cache
-app.py
-static/js/custom.js
+.env
+# app.py
+# static/js/custom.js
 
 .env
 .venv

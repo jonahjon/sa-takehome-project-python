@@ -4,6 +4,15 @@ This is a simple e-commerce application that a customer can use to purchase a bo
 ## Candidate instructions
 You'll receive these in email.
 
+### Setup instructions
+A paragraph or two about your solution: how does it work? Which Stripe APIs does it use?
+
+
+### A paragraph or two about how you approached this problem:
+ which docs did you use to complete the project? What challenges did you encounter?
+
+#### A paragraph or two about how you might extend this if you were building a more robust instance of the same application.
+
 ## Application overview
 This demo is written in Python with the [Flask framework](https://flask.palletsprojects.com/). You'll need to retrieve a set of testmode API keys from the Stripe dashboard (you can create a free test account [here](https://dashboard.stripe.com/register)) to run this locally.
 

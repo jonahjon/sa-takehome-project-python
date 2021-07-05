@@ -3,7 +3,7 @@
  */
 
  var stripe = Stripe(
-  "pk_test_51J8oiNAgweNwlGlRoGT0kUmjzhz5Ygl7AeYwgheiWaU2lyORb9DN2g4XZ0uRTMvZKUDVmt6QaOAB7gk3uX7UsRRL00MH9f8aqc"
+  "pk_test_123456"
 );
 
 $(document).ready(function () {
@@ -19,20 +19,21 @@ $(document).ready(function () {
 
   var elements = stripe.elements();
 
-  var style = {
+  const style = {
     base: {
-      color: "#32325d",
-      fontFamily: "Arial, sans-serif",
-      fontSmoothing: "antialiased",
-      fontSize: "16px",
-      "::placeholder": {
-        color: "#32325d",
+      iconColor: '#666ee8',
+      color: '#31325f',
+      fontWeight: 400,
+      fontFamily:
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif',
+      fontSmoothing: 'antialiased',
+      fontSize: '15px',
+      '::placeholder': {
+        color: '#aab7c4',
       },
-    },
-    invalid: {
-      fontFamily: "Arial, sans-serif",
-      color: "#fa755a",
-      iconColor: "#fa755a",
+      ':-webkit-autofill': {
+        color: '#666ee8',
+      },
     },
   };
 
